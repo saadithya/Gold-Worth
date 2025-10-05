@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gold Worth – Gold & Silver Price Tracker</title>
+  <meta name="description" content="Track live gold & silver prices, manage your metal portfolio, set price alerts, and achieve your investment goals with Gold Worth." />
+  <meta name="keywords" content="gold price tracker, silver price, portfolio manager, investment, alerts, currency rates, chrome extension" />
+  <meta name="author" content="Gold Worth" />
+  <link rel="icon" href="icons/icon128.png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, #f5b800, #f7d14e);
+      padding: 40px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #c99a00;
+      margin-top: 30px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .cta a {
+      display: inline-block;
+      background: #f5b800;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+    .cta a:hover {
+      background: #d99d00;
+    }
+    footer {
+      background: #f7f7f7;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e5e5;
+    }
+    footer a {
+      color: #c99a00;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gold Worth – Gold & Silver Price Tracker</h1>
+    <p>Track live prices, manage your portfolio, and achieve your financial goals.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About the Extension</h2>
+      <p>
+        <strong>Gold Worth</strong> is a smart Chrome extension designed for investors and jewelry buyers who want to stay informed about the latest gold and silver prices. 
+        You can easily manage your assets, set price alerts, and track your investment goals directly from your browser.
+      </p>
+    </section>
+
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>💰 Real-time gold and silver price tracking across currencies (INR, USD, EUR, GBP, JPY, CAD, AUD)</li>
+        <li>📊 Manage your personal metal portfolio with purity options (24K, 22K, 18K)</li>
+        <li>🚨 Set price alerts and get notified instantly</li>
+        <li>🎯 Track your investment goals and progress</li>
+        <li>🔒 100% privacy — all data stays on your device</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Why Choose Gold Worth?</h2>
+      <p>
+        Gold Worth is simple, secure, and intuitive. Whether you invest regularly or simply want to monitor market trends, 
+        this extension helps you stay organized and make informed decisions without needing extra tools or accounts.
+      </p>
+    </section>
+
+    <div class="cta">
+      <a href="https://chrome.google.com/webstore/detail/gold-worth-gold-price-por/your-extension-id" target="_blank">
+        Add to Chrome
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Gold Worth. All rights reserved.</p>
+    <p>
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      Support: <a href="mailto:sujith81159@gmail.com">sujith81159@gmail.com</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
