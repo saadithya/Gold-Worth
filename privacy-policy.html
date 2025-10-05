@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Gold Worth</title>
+  <meta name="description" content="Privacy Policy for the Gold Worth Chrome Extension – learn how we handle data and protect your privacy." />
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #f5b800, #f7d14e);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #c99a00;
+      margin-top: 30px;
+    }
+    a {
+      color: #c99a00;
+    }
+    footer {
+      background: #f7f7f7;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #e5e5e5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: <span id="date"></span></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Overview</h2>
+      <p>
+        Gold Worth – Gold & Silver Price Tracker values your privacy. This policy explains how your information is handled when you use our Chrome Extension.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Data Collection</h2>
+      <p>
+        The extension does <strong>not</strong> collect, transmit, or share any personal data.  
+        All user data, such as portfolio details, alerts, and settings, are stored securely in your browser’s <code>chrome.storage.local</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Data Usage</h2>
+      <p>
+        The extension only accesses public APIs to fetch market data and verify premium licenses:
+      </p>
+      <ul>
+        <li><strong>https://api.gold-api.com</strong> – for live gold and silver prices</li>
+        <li><strong>https://api.frankfurter.dev</strong> – for currency exchange rates</li>
+        <li><strong>https://api.gumroad.com</strong> – for license verification</li>
+      </ul>
+      <p>These APIs do not access or store any personal user data.</p>
+    </section>
+
+    <section>
+      <h2>4. Data Storage & Retention</h2>
+      <p>
+        All user data remains stored locally on your device. You may remove it anytime by uninstalling the extension.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Permissions Justification</h2>
+      <ul>
+        <li><strong>storage</strong> – Save portfolio, alerts, and user settings locally.</li>
+        <li><strong>alarms</strong> – Automatically update metal prices and check alerts on schedule.</li>
+        <li><strong>notifications</strong> – Show price and goal alerts to the user.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Third-Party Access</h2>
+      <p>
+        No personal data is shared with any third parties. External API access is limited to fetching public market data.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Contact & Support</h2>
+      <p>
+        For privacy or support inquiries, please contact us at:<br />
+        <a href="mailto:sujith81159@gmail.com">sujith81159@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Gold Worth. All rights reserved.</p>
+    <p><a href="index.html">Back to Home</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString('en-IN', {year:'numeric', month:'long', day:'numeric'});
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
